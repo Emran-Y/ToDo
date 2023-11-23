@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 30px;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:2rem;
+}
+
+form{
+  width: 45vw;
+  align-self: center;
+}
+
+.input{
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 1em;
+  min-width: 80%;
+  outline: none;
+}
+
+.button{
+  background-color: black;
+  color:white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  min-width: 15%;
+}
+
+.todo{
+  background-color: black;
+  color: white;
+  width: 45vw;
+  height: 13vh;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1em;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.icons-cont{
+  display: flex;
+  gap:0.7em;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit ,  .trash {
+  cursor: pointer;
+}
+
+.todo-title{
+  font-size: 16px;
+}
