@@ -19,6 +19,7 @@ body{
 form{
   width: 45vw;
   align-self: center;
+  min-width: 300px;
 }
 
 .input{
@@ -36,12 +37,14 @@ form{
   border: none;
   border-radius: 4px;
   min-width: 15%;
+  cursor: pointer;
 }
 
 .todo{
   background-color: black;
   color: white;
   width: 45vw;
+  min-width: 300px;
   height: 13vh;
   border-radius: 20px;
   display: flex;
@@ -66,3 +69,13 @@ form{
 .todo-title{
   font-size: 16px;
 }
+
+.trash:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+.edit:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+

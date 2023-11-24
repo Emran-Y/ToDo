@@ -55,6 +55,7 @@ function App() {
           </button>
       </form>
 
+{ todos.length > 0 ?
       <div className="lists">
         {todos.map(todo => 
         <ToDo 
@@ -63,7 +64,8 @@ function App() {
         updater = {() => updater(todo._id,todo.text)}
         deleter={() => deleter(todo._id)}
         />)}
-      </div>
+      </div> : <div><h2>Empty</h2></div>
+}
       
     </div>
   )
