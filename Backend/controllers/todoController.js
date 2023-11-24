@@ -20,7 +20,7 @@ module.exports.updateTodo =  async (req,res) => {
     const {_id,text} = req.body
 
     todoModel.findByIdAndUpdate(_id,{text})
-        .then(() => res.send('Updated sucessfully'))
+        .then(() => res.json({mesg:'Updated sucessfully'}))
         .catch((err) => console.log(err) )
 }
 
@@ -28,6 +28,6 @@ module.exports.deleteTodo =  async (req,res) => {
     const {_id} = req.body
 
     todoModel.findByIdAndDelete(_id)
-        .then(() => res.send('Deleted sucessfully'))
+        .then(() => res.json({mesg:'Deleted sucessfully'}))
         .catch((err) => console.log(err) )
 }
